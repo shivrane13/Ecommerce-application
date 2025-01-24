@@ -12,8 +12,8 @@ import OrderDetails from "./features/orders/OrderDetails";
 
 function App() {
   return (
-    <CartContextProvider>
-      <AuthProvider>
+    <AuthProvider>
+      <CartContextProvider>
         <BrowserRouter>
           <Routes>
             <Route element={<AppLayout />}>
@@ -27,8 +27,8 @@ function App() {
             </Route>
           </Routes>
         </BrowserRouter>
-      </AuthProvider>
-    </CartContextProvider>
+      </CartContextProvider>
+    </AuthProvider>
   );
 }
 
